@@ -1,0 +1,537 @@
+<html>
+ <head>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .top-bar {
+            background-color: #00d084;
+            color: #000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-bar a {
+            color: #000;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .top-bar a:hover {
+            text-decoration: underline;
+        }
+        .navbar {
+            background-color: #001f54;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .navbar .btn {
+            background-color: #00d084;
+            color: #001f54;
+            border: none;
+            padding: 10px 20px;
+        }
+        .navbar .btn:hover {
+            background-color: #00b374;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+
+        .container {
+            padding-top: 50px;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .list-group-item {
+            background-color: transparent;
+            border: none;
+            padding-left: 0;
+        }
+        .list-group-item i {
+            margin-right: 10px;
+        }
+        .highlight {
+            background-color: 
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .header-text {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .header-text h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .header-text p {
+            font-size: 1rem;
+        }
+
+
+        .header1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .header1 h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .header1 p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .feature-box {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 0 10px;
+            width: 200px;
+        }
+        .feature-box i {
+            font-size: 40px;
+            color: #1a2e6c;
+        }
+        .feature-box p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .feature-box .highlight {
+            font-weight: bold;
+        }
+        .feature-box.special {
+            background-color: #1a2e6c;
+            color: #ffffff;
+        }
+
+
+        .highlight2 {
+            color: #00D4B5;
+            font-size: 96px;
+            font-weight: bold;
+        }
+        .btn-custom {
+            background-color: #00D4B5;
+            color: #0A1A3D;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn-custom:hover {
+            background-color: #00bfa0;
+        }
+        .content2 {
+            padding: 50px;
+        }
+        .image-container2 img {
+            border-radius: 10px;
+        }
+
+
+        .testimonials {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .testimonials h2 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .testimonial-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            text-align: left;
+        }
+        .testimonial-card img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .testimonial-card h5 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .testimonial-card p {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .explore {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .explore h2 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .explore h2 span {
+            font-weight: normal;
+        }
+        .video-thumbnail {
+            width: 100%;
+            border-radius: 10px;
+            position: relative;
+        }
+        .video-thumbnail img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .video-thumbnail .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            padding: 10px 20px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="top-bar">
+   <div>
+    Study
+    <strong>
+     On Campus
+    </strong>
+    <i class="fas fa-chevron-down">
+    </i>
+   </div>
+   <div>
+    <i class="fas fa-search">
+    </i>
+    <a href="#">
+     French
+    </a>
+    <a class="btn btn-dark" href="#">
+     Apply Now
+    </a>
+   </div>
+  </div>
+  <div class="navbar">
+   <div class="logo">
+    <img alt="Multihexa logo" height="40" src="logo.png" width="100"/>
+    <span>
+     MULTIHEXA
+    </span>
+   </div>
+   <div>
+    <a href="#">
+     ABOUT MULTIHEXA
+    </a>
+    <a href="#">
+     STUDY ON CAMPUS
+     <i class="fas fa-chevron-down">
+     </i>
+    </a>
+    <a class="btn" href="#">
+     INFORMATION REQUEST
+    </a>
+   </div>
+  </div>
+
+  <div style=" background-image: url('https://placehold.co/1920x1080'); /* Placeholder for background image of a city */
+  background-size: cover;
+  color: white;
+  font-family: 'Arial', sans-serif;">
+  <div class="container">
+    <div class="header-text">
+     <h1>
+      Join
+      <span class="highlight">
+       Multihexa
+      </span>
+      To Embark On A Journey Of Excellence, Where Partnerships With Universities And Industry Leaders Ensure Adaptable, Career-Focused Learning.
+     </h1>
+    </div>
+    <div class="row">
+     <div class="col-md-4">
+      <div class="card">
+       <img alt="Aerial view of Vancouver" class="card-img-top" height="200" src="https://storage.googleapis.com/a1aa/image/SHZQiMnFFSKvFZGKtkdgnKeSh3D8KFBlFjfh5vsAOqrJBtjTA.jpg" width="350"/>
+       <div class="card-body">
+        <h5 class="card-title text-center">
+         STUDY IN VANCOUVER
+        </h5>
+        <ul class="list-group list-group-flush">
+         <li class="list-group-item">
+          <span class="highlight">
+           <i class="fas fa-briefcase">
+           </i>
+           Business Administration
+          </span>
+         </li>
+         <li class="list-group-item">
+          <i class="fas fa-chart-line">
+          </i>
+          Business Administration, Digital And Web Marketing Speciality
+         </li>
+         <li class="list-group-item">
+          <i class="fas fa-code">
+          </i>
+          Full Stack Web Developer
+         </li>
+         <li class="list-group-item">
+          <i class="fas fa-user-md">
+          </i>
+          Medical Administrative Assistant
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-4">
+      <div class="card">
+       <img alt="Skyline of Toronto" class="card-img-top" height="200" src="https://storage.googleapis.com/a1aa/image/T8lsyhFIw05qLJgRHUZ1rcDK3PfMBE3JPz8M6bAPkyKjg2xJA.jpg" width="350"/>
+       <div class="card-body">
+        <h5 class="card-title text-center">
+         STUDY IN TORONTO
+        </h5>
+        <ul class="list-group list-group-flush">
+         <li class="list-group-item">
+          <i class="fas fa-briefcase">
+          </i>
+          Business Administration
+         </li>
+         <li class="list-group-item">
+          <i class="fas fa-hotel">
+          </i>
+          Hotel Management
+         </li>
+         <li class="list-group-item">
+          <i class="fas fa-language">
+          </i>
+          ESL Programs
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-4">
+      <div class="card">
+       <img alt="Historic buildings in Quebec" class="card-img-top" height="200" src="https://storage.googleapis.com/a1aa/image/FHdYCu3tDlbWC9xz5ZRcDofZM7GcEVLLwyr6cyVrqhjjg2xJA.jpg" width="350"/>
+       <div class="card-body">
+        <h5 class="card-title text-center">
+         STUDY IN QUEBEC
+        </h5>
+        <ul class="list-group list-group-flush">
+         <li class="list-group-item">
+          <i class="fas fa-laptop-code">
+          </i>
+          Web And Mobile Applications Programmer
+         </li>
+         <li class="list-group-item">
+          <i class="fas fa-network-wired">
+          </i>
+          Network Manager
+         </li>
+         <li class="list-group-item">
+          <i class="fas fa-shield-alt">
+          </i>
+          Software Cybersecurity
+         </li>
+         <li class="list-group-item">
+          <i class="fas fa-shield-alt">
+          </i>
+          Network Cybersecurity
+         </li>
+         <li class="list-group-item">
+          <i class="fas fa-robot">
+          </i>
+          Applied Artificial Intelligence
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+</div>
+
+<div style=" background-color: #ffffff;
+color: #1a2e6c;
+font-family: 'Arial', sans-serif;">
+<div class="header1">
+    <h1>WHERE CAREERS <span style="color: #1a2e6c;">THRIVE</span></h1>
+    <p>Join The Thriving Community Who Are Propelling Their Careers Forward With Multihexa. Gain The Essential Skills And Expertise Demanded By Today's Job Market In Canada's Most Sought-After Industries.</p>
+</div>
+<div class="features">
+    <div class="feature-box">
+        <i class="fas fa-graduation-cap"></i>
+        <p>RECOGNISED <span class="highlight">PROGRAMS</span></p>
+    </div>
+    <div class="feature-box">
+        <i class="fas fa-hand-pointer"></i>
+        <p>DIVERSE <span class="highlight">DOMAINS</span></p>
+    </div>
+    <div class="feature-box special">
+        <i class="fas fa-university"></i>
+        <p>Upon Graduation, Students Gain Access To Prestigious University Pathways And Extensive Industry Networks For Career Advancement.</p>
+    </div>
+    <div class="feature-box">
+        <i class="fas fa-comments"></i>
+        <p>TOP NOTCH ESL <span class="highlight">PROGRAMS</span></p>
+    </div>
+</div>
+</div>
+
+<div style=" background-color: #0A1A3D;
+color: white;
+font-family: 'Roboto', sans-serif;">
+<div class="container2 content2">
+    <div class="row align-items-center">
+     <div class="col-md-6">
+      <h1>
+       Leverage On
+      </h1>
+      <div class="highlight2">
+       38
+      </div>
+      <h1>
+       Years Of Experience
+      </h1>
+      <p>
+       <strong>
+        At Multihexa,
+       </strong>
+       We Prioritise Student-Centred Education, Offering Practical, Flexible, And Engaging Academic And Language Programs Tailored To Real-World Needs. Our Competency-Based Approach Ensures Outcomes-Driven Learning In A Multicultural Environment, Meeting The Diverse Educational Needs Of Our Students And Communities Locally And Globally.
+      </p>
+      <p>
+       Our Learning Experiences Include Hands-On Projects And Courses To Industry-Recognized Certificates And Diploma Programs, Tailored To Meet The Needs Of The Ever-Evolving Job Landscape.
+      </p>
+      <button class="btn btn-custom">
+       READY TO APPLY
+      </button>
+     </div>
+     <div class="col-md-6 image-container2">
+      <img alt="A large, historic brick building with a clock tower, surrounded by trees and a grassy area under a partly cloudy sky" class="img-fluid" height="800" src="https://storage.googleapis.com/a1aa/image/pD8rVXZrIlafP6EXHwITnkUoX9HTe7WD2wXUuduwtIQ1QtjTA.jpg" width="600"/>
+     </div>
+    </div>
+   </div>
+</div>
+
+
+<div class="container">
+    <div class="testimonials">
+     <h2>
+      Testimonials
+     </h2>
+     <div class="d-flex justify-content-center align-items-center">
+      <i class="fas fa-chevron-left fa-2x text-success">
+      </i>
+      <div class="d-flex">
+       <div class="testimonial-card">
+        <div class="d-flex align-items-center">
+         <img alt="Portrait of Chahat Aneja" height="50" src="https://storage.googleapis.com/a1aa/image/oe2kzEpUJ7VGYCCgccDYLBeBeGBuBHlwQZjdvHgILcSMvaHnA.jpg" width="50"/>
+         <div>
+          <h5>
+           Chahat Aneja
+          </h5>
+          <p>
+           Business Administration Graduate
+          </p>
+         </div>
+        </div>
+        <p>
+         The faculty at Multihexa College is exceptional, bringing a wealth of knowledge and expertise to the classrooms. The interactive and engaging teaching methods have made my learning experience not only informative but also enjoyable.
+        </p>
+       </div>
+       <div class="testimonial-card">
+        <div class="d-flex align-items-center">
+         <img alt="Portrait of Gopal Sharma" height="50" src="https://storage.googleapis.com/a1aa/image/aA8yIx6I0uIfAiZhoOwwnhEsAZYNNuvHeCK8rwR9uHvqXtjTA.jpg" width="50"/>
+         <div>
+          <h5>
+           Gopal Sharma
+          </h5>
+          <p>
+           Flight Attendant Training Graduate
+          </p>
+         </div>
+        </div>
+        <p>
+         MultiHexa College has been instrumental in shaping my academic journey. Their career guidance simplified the course selection. The faculty's role goes beyond educators.
+        </p>
+       </div>
+       <div class="testimonial-card">
+        <div class="d-flex align-items-center">
+         <img alt="Portrait of Tanmay" height="50" src="https://storage.googleapis.com/a1aa/image/z0BnHBGOEL4BHpykLXBzTIAR093wx25bsIeftPDOh25oXtjTA.jpg" width="50"/>
+         <div>
+          <h5>
+           Tanmay
+          </h5>
+          <p>
+           Tourism and Hospitality Graduate
+          </p>
+         </div>
+        </div>
+        <p>
+         MultiHexa College Vancouver's faculty transformed my career journey when I was at a crossroads. The uncertainty about choosing the right career path - business/tech/hospitality etc. was overwhelming, but their career counseling made it simple.
+        </p>
+       </div>
+      </div>
+      <i class="fas fa-chevron-right fa-2x text-success">
+      </i>
+     </div>
+    </div>
+    <div class="explore">
+     <h2>
+      Explore
+      <span>
+       Multihexa
+      </span>
+     </h2>
+     <div class="video-thumbnail">
+      <img alt="Image of a large, historic building with a cloudy sky in the background" height="400" src="https://storage.googleapis.com/a1aa/image/YPemUqZrzwWJBC3mlMnotll81hSfWUpyvrK2Qz8OaMGlXtjTA.jpg" width="800"/>
+      <i class="fas fa-play play-button">
+      </i>
+     </div>
+    </div>
+   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+ </body>
+</html>

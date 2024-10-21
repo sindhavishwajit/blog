@@ -1,0 +1,708 @@
+<html>
+ <head>
+  <title>
+   Multihexa - About
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+  <style>
+   body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+        }
+        .navbar {
+            background-image: url(https://s3-alpha-sig.figma.com/img/eeff/ba15/1ebae8e4b235f7a586ed8289d15ba37c?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i1vuQm7txyJuO9dKCL~g2L7MbCBLFmG4BzVmQjZTChvVeCWS8zBjfE6mOOciYBmrhpCAdMmMp65h68r7j4QM1NtZYvBwXae7bFpP7yz92~vJ5RXmZiMqrg0uPDDaDbvrcKnsfrn6gaUsvWkEwnqz76Fd1l5MlfXjBijUpCBhv5q7AuHJjzzNnzl0UM5aAek8G7mwy3SL9b8DU1~o-hii01OZrIUjcMesdoRPV1oNvxvMev4xDxDOp3VR0ky1TKE4mYPZHlyVoPucwpXVSiMjes2BsN8CXRiBdtPBoTjRI8s-2pAsUFHJ7UsGUjWf2yMz1TSIN0~heaqNO3r2gyVOpg__);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo img {
+            height: 60px;
+            margin-right: 10px;
+        }
+        .navbar .logo span {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar .menu {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+        .navbar .menu a.active {
+            border-bottom: 2px solid #00d1b2;
+        }
+        .navbar .menu .request-btn {
+            background-color: #00d1b2;
+            color: #0a1f44;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .header {
+            background-image: url(https://s3-alpha-sig.figma.com/img/eeff/ba15/1ebae8e4b235f7a586ed8289d15ba37c?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i1vuQm7txyJuO9dKCL~g2L7MbCBLFmG4BzVmQjZTChvVeCWS8zBjfE6mOOciYBmrhpCAdMmMp65h68r7j4QM1NtZYvBwXae7bFpP7yz92~vJ5RXmZiMqrg0uPDDaDbvrcKnsfrn6gaUsvWkEwnqz76Fd1l5MlfXjBijUpCBhv5q7AuHJjzzNnzl0UM5aAek8G7mwy3SL9b8DU1~o-hii01OZrIUjcMesdoRPV1oNvxvMev4xDxDOp3VR0ky1TKE4mYPZHlyVoPucwpXVSiMjes2BsN8CXRiBdtPBoTjRI8s-2pAsUFHJ7UsGUjWf2yMz1TSIN0~heaqNO3r2gyVOpg__);
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .header .icon {
+            color: #00d1b2;
+            font-size: 24px;
+            margin-left: 10px;
+        }
+        .content {
+            background-color: #00d1b2;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .content h2 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .content h2 .highlight {
+            font-weight: bold;
+        }
+        .content p {
+            font-size: 16px;
+            margin-top: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+
+        .container1 {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #1a2e6c;
+            margin-bottom: 40px;
+        }
+        .content1 {
+            display: flex;
+            justify-content: space-between;
+        }
+        .column {
+            width: 45%;
+        }
+        .column h2 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1a2e6c;
+            margin-top: 0;
+        }
+        .column p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .column ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .column ul li {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+
+        .hero-section {
+            background: rgba(0, 128, 128, 0.8);
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            position: relative;
+        }
+        .hero-section img {
+            width: 100%;
+            height: auto;
+            opacity: 0.3;
+        }
+        .hero-section .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .hero-section .content h1 {
+            font-size: 2.5rem;
+        }
+        .hero-section .content .play-button {
+            font-size: 3rem;
+            color: white;
+        }
+        .financial-aid-section {
+            padding: 50px 0;
+            text-align: left;
+        }
+        .financial-aid-section h2 {
+            font-size: 2rem;
+            color: #001f3f;
+        }
+        .financial-aid-section h2 span {
+            font-weight: bold;
+        }
+        .financial-aid-section p {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .financial-aid-section .info-request-btn {
+            background-color: #00a65a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            text-transform: uppercase;
+        }
+        .financial-aid-section .info-request-btn:hover {
+            background-color: #008d4c;
+        }
+        .financial-aid-section .image-container {
+            text-align: right;
+        }
+        .financial-aid-section .image-container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        
+
+
+        .values-section, .team-section {
+            padding: 50px 0;
+        }
+        .values-section {
+            background-color: #0a1b2b;
+        }
+        .team-section {
+            background-color: #0a1b2b;
+        }
+        .values-section h2, .team-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .value-item {
+            text-align: center;
+            padding: 20px;
+        }
+        .value-item h4 {
+            margin-top: 20px;
+            color: #00b4d8;
+        }
+        .value-item p {
+            color: #ffffff;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .team-member h5 {
+            margin-top: 15px;
+            color: #00b4d8;
+        }
+        .team-member p {
+            color: #ffffff;
+        }
+
+
+        .footer {
+            padding: 40px 0;
+        }
+        .footer .logo {
+            margin-bottom: 20px;
+        }
+        .footer .newsletter {
+            margin-bottom: 20px;
+        }
+        .footer .newsletter input[type="email"] {
+            width: 250px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
+        .footer .newsletter button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background-color: #00D084;
+            color: white;
+        }
+        .footer .quick-links a {
+            display: block;
+            color: #00D084;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        .footer .social-icons a {
+            color: white;
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .footer .privacy {
+            margin-top: 20px;
+        }
+        .footer .privacy a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <div class="logo">
+    <img alt="Multihexa Logo" src="logo.png"/>
+    
+   </div>
+   <div class="menu">
+    <a href="#">
+     HOME
+    </a>
+    <a class="active" href="#">
+     ABOUT
+    </a>
+    <a href="#">
+     PROGRAMS
+    </a>
+    <a href="#">
+     NEWS
+    </a>
+    <a href="#">
+     STUDY IN VANCOUVER
+    </a>
+    <a href="#">
+     BUSINESS
+    </a>
+    <a href="#">
+     CONTACT
+    </a>
+    <a class="request-btn" href="#">
+     INFORMATION REQUEST
+    </a>
+   </div>
+  </div>
+  <div class="header">
+   <h1>
+    About
+    <i class="fas fa-chevron-right icon">
+    </i>
+   </h1>
+  </div>
+  <div class="content">
+   <h2>
+    Innovation at the
+    <span class="highlight">
+     next level
+    </span>
+   </h2>
+   <p>
+    Welcome to Multihexa! Since 1986, we have been training true information technology (IT) specialists. We have chosen to concentrate our activities in this area only and this is what allows us to offer information technology programs and, above all, superior quality education. For nearly 40 years, our private college has been the leader in training for the field of information technology.
+   </p>
+  </div>
+
+
+  <div class="container1">
+    <div class="header1">
+        Many benefits come with training at Multihexa!
+    </div>
+    <div class="content1">
+        <div class="column">
+            <h2>THE SHORT DURATION OF THE TRAINING</h2>
+            <p>You can follow your training for one year full-time (5 days/week) or for 18 to 21 months part-time (2 to 3 days/week)</p>
+            
+            <h2>COLLEGE SPECIALIZATION</h2>
+            <p>We've been operating as a training leader in information technology since 1986. It's what allows you to learn specialized skills and take innovation to the next level.</p>
+            
+            <h2>EVERYWHERE IN VANCOUVER</h2>
+            <p>Take your training online, in class or in hybrid mode.</p>
+            
+            <h2>BRITISH COLUMBIA CAMPUS</h2>
+            <p>One of Multihexa College campuses in British Columbia sits in Vancouver, a bustling west coast seaport and the major urban centre of western Canada. As of 2022, the city is also ranked as the fifth most livable city in the world by the U.K.-based Economist Intelligence Unit (EIU).</p>
+        </div>
+        <div class="column">
+            <h2>VERY FAVORABLE ADMISSION CONDITIONS</h2>
+            <p>In order to provide quality education to all, here are the minimum requirements we ask :</p>
+            <ul>
+                <li>Secondary 5 or equivalent</li>
+                <li>No computer knowledge required</li>
+                <li>No advanced math course required</li>
+            </ul>
+            
+            <h2>ACCESS TO A FINANCIAL AID PROGRAM FOR STUDIES</h2>
+            <p>Multihexa is an educational institution recognized by the Ministry of Higher Education. You can benefit from the financial assistance program for studies from the Government of Vancouver.</p>
+            
+            <h2>ACCESS TO VARIOUS TAX CREDITS</h2>
+            <p>By registering with Multihexa, you could be eligible for certain tax credits. Depending on your geographic location, tax credits can pay for up to 86% of your training.</p>
+        </div>
+    </div>
+</div>
+
+<div style="margin: 0;
+font-family: Arial, sans-serif;
+background-image: url(https://s3-alpha-sig.figma.com/img/0c74/b37e/c342e8e0bbe0d54627b75c64a0530d22?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IiQQivgB0kgPIzj6USZ96tutc6O5t7UZT3N2-ue4o9BSH-RVc5ZE5NPszls2VdOkZqrOC9O1xGIg1-iiZW3gd4HQ-NUmSe14wkERvjHMT4Qu6L63YIIpdI75UrKbI66SF5Vdhs~Ec605yfzpQxVsykyRoqfiALC4zpLYXyxIloetG6X6YPeWQd2UhkDSihxu8fS-DWuSGLvIGCmFcSNIDGKaJ3TW8aXKjO7kwrI1vRga-A-pFMepsK-hWzAyj1KvDqR2w-II1UZGGJgPbY9OQKsGuz~rsaWQWDEKlxkSOM1aS3Gy8YWyTcIoRNgAU4~eNtDlnLw9cFiFhtzF6C8-Dg__);
+color: white;
+text-align: center;">
+<div style="padding: 28px;">
+    <h1 style="font-size: 36px;
+            font-weight: normal;">
+     Innovation at the
+     <span style="font-weight: bold;">
+      next level
+     </span>
+    </h1>
+    <div class="grid">
+     <img alt="Person working on a laptop in a server room" src="https://placehold.co/300x200"/>
+     <img alt="Person looking at a screen in a server room" src="https://placehold.co/300x200"/>
+     <img alt="Team working in an office with multiple screens" src="https://placehold.co/300x200"/>
+     <img alt="Empty office space with desks and chairs" src="https://placehold.co/300x200"/>
+     <img alt="People having a meeting in a modern office" src="https://placehold.co/300x200"/>
+     <img alt="Person working on a laptop by a window" src="https://placehold.co/300x200"/>
+     <img alt="Close-up of server hardware" src="https://placehold.co/300x200"/>
+     <img alt="Server rack with equipment" src="https://placehold.co/300x200"/>
+     <img alt="Screen displaying server information" src="https://placehold.co/300x200"/>
+     <img alt="Multiple server racks in a data center" src="https://placehold.co/300x200"/>
+     <img alt="Close-up of server hardware" src="https://placehold.co/300x200"/>
+     <img alt="Person working on server equipment" src="https://placehold.co/300x200"/>
+     <img alt="People working in a modern office" src="https://placehold.co/300x200"/>
+     <img alt="Two people collaborating on a laptop" src="https://placehold.co/300x200"/>
+     <img alt="Company logo on a wall" src="https://placehold.co/300x200"/>
+     <img alt="Person working on a computer in an office" src="https://placehold.co/300x200"/>
+    </div>
+   </div>
+</div>
+
+<div class="hero-section">
+    <img alt="Background image of students studying in a library" height="1080" src="https://storage.googleapis.com/a1aa/image/MresVwkzBfvVFEq2EqrXgSlybX9GnhzuySeXNLxXzK5iCeKOB.jpg" width="1920"/>
+    <div class="content">
+     <i class="fas fa-play-circle play-button">
+     </i>
+     <h1>
+      Study at
+      <span style="color: #00d1b2;">
+       Multihexa
+      </span>
+     </h1>
+    </div>
+   </div>
+   <div class="container financial-aid-section">
+    <div class="row">
+     <div class="col-md-8">
+      <h2>
+       Financial
+       <span>
+        aid
+       </span>
+      </h2>
+      <p>
+       At Multihexa, various financial assistance programs are available. The objective is to allow everyone to have access to quality training. Various financial assistance programs and tax credits are offered.
+      </p>
+      <p>
+       Certain criteria must be met to access financial assistance programs. To check if you are eligible or to receive support in your process, contact us. We will be happy to help you.
+      </p>
+      <button class="info-request-btn">
+       Information Request
+      </button>
+     </div>
+     <div class="col-md-4 image-container">
+      <img alt="Portrait of a woman smiling" height="300" src="https://storage.googleapis.com/a1aa/image/VKeR7S9ZsvzoUS1EfyjRvrAqqrKFJljt4sNrwjLTQacTBviTA.jpg" width="300"/>
+     </div>
+    </div>
+   </div>
+
+
+
+   <div style=" background-color: #0a1b2b;
+   color: white;
+   font-family: 'Arial', sans-serif;">
+     <div class="values-section">
+        <div class="container">
+         <h2>
+          Our
+          <span style="color: #00b4d8;">
+           values
+          </span>
+         </h2>
+         <div class="row">
+          <div class="col-md-4 value-item">
+           <i class="fas fa-star fa-3x" style="color: #ffcc00;">
+           </i>
+           <h4>
+            THE QUALITY
+           </h4>
+           <p>
+            As professionals, we offer educations that creates solutions and value. We are committed to the success of our students and their future employers. The quality of our services and our programs is reflected in their careers.
+           </p>
+          </div>
+          <div class="col-md-4 value-item">
+           <i class="fas fa-universal-access fa-3x" style="color: #ffcc00;">
+           </i>
+           <h4>
+            ACCESSIBILITY
+           </h4>
+           <p>
+            The different teaching methods offered, the flexibility of the schedules, the variety of programs and the possibility of distance learning make our services accessible to all. We are committed to making education accessible in a real and compelling way.
+           </p>
+          </div>
+          <div class="col-md-4 value-item">
+           <i class="fas fa-lightbulb fa-3x" style="color: #ffcc00;">
+           </i>
+           <h4>
+            INNOVATION
+           </h4>
+           <p>
+            Our open-mindedness to trends, innovations in the field of education and the use of new technologies allow us to offer our students a modern and dynamic learning environment.
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="team-section">
+        <div class="container">
+         <h2>
+          Our
+          <span style="color: #00b4d8;">
+           team
+          </span>
+         </h2>
+         <div class="row">
+          <div class="col-md-3 team-member">
+           <img alt="Portrait of Hugo Delisle" height="150" src="https://storage.googleapis.com/a1aa/image/acsjBof2Mh3zQi5pCBIkF3cGoifD0bh3Ez4MtnBkB1FU1uiTA.jpg" width="150"/>
+           <h5>
+            HUGO DELISLE
+           </h5>
+           <p>
+            Managing Director, CPA, CMA
+           </p>
+          </div>
+          <div class="col-md-3 team-member">
+           <img alt="Portrait of Daniella Seraggia" height="150" src="https://storage.googleapis.com/a1aa/image/2RzR6MgkYdo8I1rBYe78ve5Jm0ApRyVMiJRAojtwy6BP1uiTA.jpg" width="150"/>
+           <h5>
+            DANIELLA SERAGGIA
+           </h5>
+           <p>
+            Administrative Assistant
+           </p>
+          </div>
+          <div class="col-md-3 team-member">
+           <img alt="Portrait of Helene Lavoie" height="150" src="https://storage.googleapis.com/a1aa/image/anZenHQHfDlTZE1YdzlBKky2MgFsxMcwarRIyS1k49sS1uiTA.jpg" width="150"/>
+           <h5>
+            HELENE LAVOIE
+           </h5>
+           <p>
+            Corporate Strategic Coordinator and Lawyer
+           </p>
+          </div>
+          <div class="col-md-3 team-member">
+           <img alt="Portrait of Dany Pedneault" height="150" src="https://storage.googleapis.com/a1aa/image/fDcpWsdHfEoSMkqfT53LvO7RXTl7TLfdfo2vWpJhfkUFWtr4E.jpg" width="150"/>
+           <h5>
+            DANY PEDNEAULT
+           </h5>
+           <p>
+            Technical director and teacher
+           </p>
+          </div>
+          <div class="col-md-3 team-member">
+           <img alt="Portrait of Claude Lusignan" height="150" src="https://storage.googleapis.com/a1aa/image/qFyifZXErTVTbyaWs9AgDBAgdNJH8JG15D3c6WApdxmkaXxJA.jpg" width="150"/>
+           <h5>
+            CLAUDE LUSIGNAN
+           </h5>
+           <p>
+            System Administrator
+           </p>
+          </div>
+          <div class="col-md-3 team-member">
+           <img alt="Portrait of Bruno Larocque" height="150" src="https://storage.googleapis.com/a1aa/image/om2hCS97yeyuViqrvPiO7kNuAt9RJSRNAe6lQ3xg2zGL1uiTA.jpg" width="150"/>
+           <h5>
+            BRUNO LAROCQUE
+           </h5>
+           <p>
+            Director of Studies and Registrar
+           </p>
+          </div>
+          <div class="col-md-3 team-member">
+           <img alt="Portrait of Alexander de Vries" height="150" src="https://storage.googleapis.com/a1aa/image/kKEL215rU47PGp7NNjeqacoerGnEzaXkX5yEf5sLcue3U7KOB.jpg" width="150"/>
+           <h5>
+            ALEXANDER DE VRIES
+           </h5>
+           <p>
+            Educational consultant
+           </p>
+          </div>
+          <div class="col-md-3 team-member">
+           <img alt="Portrait of Elliott Leblond-Richen" height="150" src="https://storage.googleapis.com/a1aa/image/ZIVW3Um9vC54Ed5HmAnywslReeBDfdOHkQrjcDkucqEZqdFnA.jpg" width="150"/>
+           <h5>
+            ELLIOTT LEBLOND-RICHEN
+           </h5>
+           <p>
+            Teacher
+           </p>
+          </div>
+          <div class="col-md-3 team-member">
+           <img alt="Portrait of Regis Gagnon" height="150" src="https://storage.googleapis.com/a1aa/image/Umni1nsXKvKPBFyo1Z7XM2M5drZhpEmsOMGiHHUep3DoaXxJA.jpg" width="150"/>
+           <h5>
+            RÉGIS GAGNON
+           </h5>
+           <p>
+            Teacher
+           </p>
+          </div>
+          <div class="col-md-3 team-member">
+           <img alt="Portrait of Samuel Garneau" height="150" src="https://storage.googleapis.com/a1aa/image/BG4mmtJVfTy9MqGsTV2l0uYQzEHHBMOA8qfEayXGYFUW1uiTA.jpg" width="150"/>
+           <h5>
+            SAMUEL GARNEAU
+           </h5>
+           <p>
+            Teacher
+           </p>
+          </div>
+          <div class="col-md-3 team-member">
+           <img alt="Portrait of Jocelyn Cloutier" height="150" src="https://storage.googleapis.com/a1aa/image/p9I2fde08hpYlkjLTenp6efhiNVts2a9B0Ruo3W36AWCp2VcC.jpg" width="150"/>
+           <h5>
+            JOCELYN CLOUTIER
+           </h5>
+           <p>
+            Teacher
+           </p>
+          </div>
+          <div class="col-md-3 team-member">
+           <img alt="Portrait of Gabrielle Gagnon" height="150" src="https://storage.googleapis.com/a1aa/image/8CJTg9nDT3I8OZqJfF5DmaZBIrzy4Z4x3kz61m8AkSgpaXxJA.jpg" width="150"/>
+           <h5>
+            GABRIELLE GAGNON
+           </h5>
+           <p>
+            Content creator
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+   </div>
+
+
+   <div style="background-color: #0A1A3A;
+   color: white;
+   font-family: Arial, sans-serif;">
+   <div class="container footer">
+    <div class="row">
+     <div class="col-md-4">
+      <div class="logo">
+       <img alt="Multihexa logo" height="60" src="logo.png"/>
+      </div>
+      <div class="newsletter">
+       <p>
+        FOLLOW MULTIHEXA NEWS!
+       </p>
+       <form class="d-flex">
+        <input class="form-control" placeholder="E-mail" type="email"/>
+        <button class="btn" type="submit">
+         SEND
+        </button>
+       </form>
+      </div>
+     </div>
+     <div class="col-md-4">
+      <div class="quick-links">
+       <h5>
+        Quick Links
+       </h5>
+       <a href="#">
+        ABOUT
+       </a>
+       <a href="#">
+        PROGRAMS
+       </a>
+       <a href="#">
+        NEWS
+       </a>
+       <a href="#">
+        STUDY IN VANCOUVER
+       </a>
+       <a href="#">
+        BUSINESS
+       </a>
+       <a href="#">
+        CONTACT
+       </a>
+      </div>
+     </div>
+     <div class="col-md-4 text-center">
+      <div class="social-icons">
+       <a href="#">
+        <i class="fab fa-facebook-f">
+        </i>
+       </a>
+       <a href="#">
+        <i class="fab fa-linkedin-in">
+        </i>
+       </a>
+       <a href="#">
+        <i class="fab fa-youtube">
+        </i>
+       </a>
+       <a href="#">
+        <i class="fab fa-instagram">
+        </i>
+       </a>
+       <a href="#">
+        <i class="fab fa-tiktok">
+        </i>
+       </a>
+      </div>
+      <div class="privacy">
+       <a href="#">
+        Privacy Policy
+       </a>
+       <a href="#">
+        My Cookie Preferences
+       </a>
+       <p>
+        All rights reserved 2024 © Multihexa
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+</div>
+ </body>
+</html>

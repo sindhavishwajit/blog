@@ -1,0 +1,624 @@
+<html>
+ <head>
+  <title>
+   Business - Multihexa
+  </title>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            background-color: #0A1F44;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #0A1F44;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+            font-size: 14px;
+            margin-right: 20px;
+        }
+        .navbar-nav .nav-link.active {
+            border-bottom: 2px solid white;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #00D084;
+        }
+        .btn-info-request {
+            background-color: #00D084;
+            color: #0A1F44;
+            font-weight: bold;
+        }
+        .header {
+            background-image: url('https://placehold.co/1920x400');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        .header .fa-chevron-right {
+            color: #00D084;
+            font-size: 24px;
+        }
+        .contact-section {
+            background-color: #0A1F44;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .contact-section h2 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .contact-section p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .contact-section .contact-info {
+            color: #00D084;
+            font-size: 16px;
+        }
+
+
+        .advantages-section {
+            padding: 50px;
+        }
+        .advantages-section h2 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+        .advantages-section p {
+            font-size: 16px;
+            color: #1a1a1a;
+        }
+        .icon {
+            font-size: 50px;
+            color: #007bff;
+        }
+        .icon-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+
+        .header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        .btn-group .btn {
+            margin: 0 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+        .btn-group .btn.active {
+            background-color: #00d48b;
+            color: #0b1b3f;
+        }
+        .content {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .content h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .content p {
+            font-size: 1rem;
+            color: #a0b9d8;
+        }
+        .content hr {
+            border-top: 1px solid #1a2b4d;
+            margin: 20px 0;
+        }
+        .content .toggle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        .content .toggle h2 {
+            color: #00d48b;
+        }
+        .content .toggle i {
+            font-size: 1.5rem;
+            color: #00d48b;
+        }
+
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0a0a23;
+        }
+        .training-list {
+            list-style: none;
+            padding: 0;
+        }
+        .training-list li {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+        .training-list li::before {
+            content: '\f054';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: #00c853;
+            margin-right: 10px;
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+        .contact-info a {
+            color: #00c853;
+            text-decoration: none;
+        }
+
+
+        .trainer-card {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+        }
+        .trainer-card img {
+            width: 100%;
+            height: auto;
+        }
+        .trainer-name {
+            color: #00bfa5;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .trainer-title {
+            color: #b0b0b0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .header p {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+        }
+
+
+        .main-content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .main-content h1 {
+            font-size: 2.5rem;
+            color: #0a1f44;
+        }
+        .main-content h2 {
+            font-size: 2rem;
+            color: #0a1f44;
+            font-weight: bold;
+        }
+        .main-content p {
+            font-size: 1rem;
+            color: #000000;
+        }
+        .btn-info-request {
+            background-color: #00d084;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+        .footer {
+            background-color: #103371;
+            color: #ffffff;
+            padding: 40px 20px;
+        }
+        .footer .logo {
+            display: flex;
+            align-items: center;
+        }
+        .footer .logo img {
+            width: 50px;
+            margin-right: 10px;
+        }
+        .footer .quick-links {
+            list-style: none;
+            padding: 0;
+        }
+        .footer .quick-links li {
+            margin-bottom: 10px;
+        }
+        .footer .quick-links a {
+            color: #00d084;
+            text-decoration: none;
+        }
+        .footer .social-icons a {
+            color: #ffffff;
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+        .footer .newsletter input[type="email"] {
+            padding: 5px;
+            border: none;
+            margin-right: 10px;
+        }
+        .footer .newsletter button {
+            background-color: #00d084;
+            color: #ffffff;
+            border: none;
+            padding: 5px 10px;
+        }
+        .footer .privacy-links {
+            margin-top: 20px;
+        }
+        .footer .privacy-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+  </style>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg">
+   <div class="container">
+    <a class="navbar-brand" href="#">
+     <img alt="Multihexa Logo" height="50" src="logo.png" width="150"/>
+    </a>
+    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+     <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        HOME
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        ABOUT
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        PROGRAMS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        NEWS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        STUDY IN VANCOUVER
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link active" href="#">
+        BUSINESS
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        CONTACT
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="btn btn-info-request" href="#">
+        INFORMATION REQUEST
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <div class="header">
+   <h1>
+    Business
+    <i class="fas fa-chevron-right">
+    </i>
+   </h1>
+  </div>
+  <div class="contact-section">
+   <h2>
+    Contact us for a free assessment
+   </h2>
+   <p>
+    All of our lesson plans can be personalized according to your needs. For further information, contact Hélène Lavoie:
+   </p>
+   <p class="contact-info">
+    helene.lavoie@multihexa.ca / 418 690-0270 option 2
+   </p>
+  </div>
+
+<div style="font-family: Arial, sans-serif;
+background-color: #ffffff;
+color: #000000;">
+  <div class="container advantages-section">
+    <h2>Our advantages</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <p>Our training is given face-to-face at the Multihexa Saguenay premises. However, if you are elsewhere in Quebec, you have the possibility to follow our online training courses. Additionally, we can also organize training sessions at your premises.</p>
+        </div>
+        <div class="col-md-3">
+            <p>We offer a needs assessment at no cost or obligation. Whether you are a beginner, intermediate or advanced, we will personalize our services according to your needs, in order to provide you with an optimal learning experience.</p>
+        </div>
+        <div class="col-md-3">
+            <p>The duration of the training is flexible and can be adjusted in blocks of 3, 4 or 6 hours, depending on your preferences. Training dates are set based on your availability and that of the trainer.</p>
+        </div>
+        <div class="col-md-3">
+            <p>During the training, you will have the necessary equipment at your disposal and you will be supervised by experienced trainers who will support you throughout your courses.</p>
+        </div>
+    </div>
+    <div class="row icon-container">
+        <div class="col-md-3">
+            <i class="fas fa-laptop icon"></i>
+        </div>
+        <div class="col-md-3">
+            <i class="fas fa-school icon"></i>
+        </div>
+        <div class="col-md-3">
+            <i class="fas fa-clock icon"></i>
+        </div>
+        <div class="col-md-3">
+            <i class="fas fa-book icon"></i>
+        </div>
+    </div>
+</div>
+</div>
+
+<div style="background-color: #0b1b3f;
+color: #ffffff;
+font-family: 'Arial', sans-serif;">
+<div class="header">
+    <h1>Our General Training</h1>
+    <p>For over 35 years, we have been offering beginner, intermediate and advanced training for the following software: The Office suite, Adobe Acrobat and several others...</p>
+</div>
+<div class="btn-group">
+    <button class="btn btn-light active">MICROSOFT WORD</button>
+    <button class="btn btn-success">MICROSOFT EXCEL</button>
+    <button class="btn btn-success">MSPROJECT</button>
+    <button class="btn btn-success">MICROSOFT ONENOTE</button>
+    <button class="btn btn-success">MICROSOFT OUTLOOK</button>
+    <button class="btn btn-success">MICROSOFT POWERPOINT</button>
+</div>
+<div class="content">
+    <h2>WORD MODULE 1 - 9</h2>
+    <p>Microsoft Word_Module 1 – 9</p>
+    <hr>
+    <div class="toggle">
+        <h2>WORD FOR OFFICE WORKERS AND ADMINISTRATIVE ASSISTANTS</h2>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <hr>
+</div>
+</div>
+
+<div style="font-family: Arial, sans-serif;
+background-color: #ffffff;
+color: #0a0a23;
+padding: 20px;">
+<div class="container">
+    <h1>Our information technology training</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="training-list">
+                <li>AZURE</li>
+                <li>BI Business Intelligence</li>
+                <li>CISCO</li>
+                <li>Citrix</li>
+                <li>Cobit></li>
+                <li>Comptia</li>
+                <li>Exchange Server</li>
+                <li>ISO</li>
+                <li>ITIL</li>
+                <li>Microsoft</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul class="training-list">
+                <li>Office365</li>
+                <li>Power Apps: Business Apps</li>
+                <li>SharePoint</li>
+                <li>Windows</li>
+                <li>Windows Server</li>
+                <li>VMware</li>
+            </ul>
+        </div>
+    </div>
+    <div class="contact-info">
+        <p>All our training is offered online and throughout Vancouver.</p>
+        <p>To obtain additional information on the courses offered, contact Hélène Lavoie:<br>
+        <a href="mailto:helene.lavoie@multihexa.ca">helene.lavoie@multihexa.ca</a> 418 690-0270 option 2</p>
+    </div>
+</div>
+</div>
+
+
+<div class="container">
+    <div class="header">
+     <h1>
+      Our trainers
+     </h1>
+     <p>
+      Our trainers have more than 10 years of experience in their respective fields.
+     </p>
+    </div>
+    <div class="row">
+     <div class="col-md-3">
+      <div class="trainer-card">
+       <img alt="Portrait of Helene Lavoie" height="400" src="https://storage.googleapis.com/a1aa/image/UQ0b2pN9i07YHpcMtuzXEPC9DTpxJjVdGtdRbu3LFvdBil5E.jpg" width="300"/>
+       <div class="trainer-name">
+        HELENE LAVOIE
+       </div>
+       <div class="trainer-title">
+        Corporate training coordinator and trainer
+       </div>
+      </div>
+     </div>
+     <div class="col-md-3">
+      <div class="trainer-card">
+       <img alt="Portrait of Jocelyn Cloutier" height="400" src="https://storage.googleapis.com/a1aa/image/bdxTxef1pZuIAkJCatwnbTK3vbwFij8XfFh67x6iMa9GQsMnA.jpg" width="300"/>
+       <div class="trainer-name">
+        JOCELYN CLOUTIER
+       </div>
+       <div class="trainer-title">
+        Teacher
+       </div>
+      </div>
+     </div>
+     <div class="col-md-3">
+      <div class="trainer-card">
+       <img alt="Portrait of Guy Forget" height="400" src="https://storage.googleapis.com/a1aa/image/soyGHO4a5LJLHNuvjPTk3j3lJKgkx4SIq3vhVFBUX0kBil5E.jpg" width="300"/>
+       <div class="trainer-name">
+        GUY FORGET
+       </div>
+       <div class="trainer-title">
+        MS Project Trainer
+       </div>
+      </div>
+     </div>
+     <div class="col-md-3">
+      <div class="trainer-card">
+       <img alt="Portrait of Jacques-Yves Gorguet" height="400" src="https://storage.googleapis.com/a1aa/image/gjOq7TpgYIKCBNnefqJ6Slkz5EUSegYOq4LfdUePa2OVAxycC.jpg" width="300"/>
+       <div class="trainer-name">
+        JACQUES-YVES GORGUET
+       </div>
+       <div class="trainer-title">
+        Information technology trainer
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+
+
+   <div class="footer">
+    <div class="container">
+     <div class="row">
+      <div class="col-md-4">
+       <div class="logo">
+        <img alt="Multihexa logo" height="50" src="logo.png" width="50">
+        <span>
+         
+        </span>
+       </div>
+       <div class="newsletter">
+        <p>
+         FOLLOW MULTIHEXA NEWS!
+        </p>
+        <input placeholder="E-mail" type="email"/>
+        <button>
+         SEND
+        </button>
+       </div>
+      </div>
+      <div class="col-md-4">
+       <ul class="quick-links">
+        <li>
+         <a href="#">
+          ABOUT
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          PROGRAMS
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          NEWS
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          STUDY IN VANCOUVER
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          BUSINESS
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          CONTACT
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="col-md-4 text-center">
+       <div class="social-icons">
+        <a href="#">
+         <i class="fab fa-facebook-f">
+         </i>
+        </a>
+        <a href="#">
+         <i class="fab fa-linkedin-in">
+         </i>
+        </a>
+        <a href="#">
+         <i class="fab fa-youtube">
+         </i>
+        </a>
+        <a href="#">
+         <i class="fab fa-instagram">
+         </i>
+        </a>
+        <a href="#">
+         <i class="fab fa-tiktok">
+         </i>
+        </a>
+       </div>
+       <div class="privacy-links">
+        <a href="#">
+         Privacy Policy
+        </a>
+        <a href="#">
+         My Cookie Preferences
+        </a>
+       </div>
+       <p>
+        All rights reserved 2024 © Multihexa
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> 
+</body>
+</html>

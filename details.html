@@ -1,0 +1,650 @@
+<html>
+ <head>
+  <title>
+   Web and Mobile Application Programming
+  </title>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #0a1f44;
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+        .header-section {
+            background-color: #0a1f44;
+            color: white;
+            padding: 50px 0;
+            position: relative;
+        }
+        .header-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        .header-section::before {
+            content: '';
+            background: url('https://placehold.co/600x400') no-repeat center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 50%;
+            z-index: 1;
+            opacity: 0.5;
+        }
+        .header-section h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        .header-section .info-box {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .header-section .info-box i {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        .header-section .student-info {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .header-section .student-info img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .program-description {
+            padding: 50px 0;
+        }
+        .program-description h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0a1f44;
+        }
+        .program-description ul {
+            list-style: none;
+            padding: 0;
+        }
+        .program-description ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .program-description ul li i {
+            color: #28a745;
+            margin-right: 10px;
+        }
+
+
+        .header {
+            background-color: #0a1f44;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .header p {
+            font-size: 1.2rem;
+        }
+        .career-opportunities {
+            display: flex;
+            justify-content: space-around;
+            padding: 30px 0;
+            background-color: #0a1f44;
+            color: white;
+        }
+        .career-opportunity {
+            text-align: center;
+            max-width: 300px;
+        }
+        .career-opportunity img {
+            width: 50px;
+            height: 50px;
+        }
+        .career-opportunity h3 {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        .career-opportunity p {
+            font-size: 0.9rem;
+        }
+        .lesson-plan {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .lesson-plan h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #0a1f44;
+        }
+        .sessions {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .session {
+            background-color: #0a1f44;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        .session:nth-child(2) {
+            background-color: #00bfa6;
+        }
+        .session:nth-child(3) {
+            background-color: #00bfa6;
+        }
+        .session:nth-child(4) {
+            background-color: #00bfa6;
+        }
+        .session:nth-child(5) {
+            background-color: #00bfa6;
+        }
+        .session:nth-child(6) {
+            background-color: #00bfa6;
+        }
+        .accordion-item {
+            border: none;
+            margin-top: 10px;
+        }
+        .accordion-button {
+            background-color: #f8f9fa;
+            color: #0a1f44;
+            font-weight: bold;
+        }
+        .accordion-button:not(.collapsed) {
+            color: #0a1f44;
+            background-color: #e9ecef;
+        }
+
+
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+        .main-content img {
+            border-radius: 10px;
+            max-width: 100%;
+        }
+        .main-content .text-content {
+            margin-left: 30px;
+        }
+        .main-content .text-content h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .main-content .text-content h1 span {
+            color: #00D4A0;
+        }
+        .main-content .text-content p {
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+        .main-content .text-content .btn {
+            background-color: #00D4A0;
+            color: #0A1A3A;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background-color: #0A1A3A;
+        }
+        .footer .left-section {
+            display: flex;
+            align-items: center;
+        }
+        .footer .left-section img {
+            max-width: 100px;
+        }
+        .footer .left-section .newsletter {
+            margin-left: 20px;
+        }
+        .footer .left-section .newsletter input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .footer .left-section .newsletter .btn {
+            background-color: #00D4A0;
+            color: #0A1A3A;
+            font-weight: bold;
+        }
+        .footer .right-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .footer .right-section .quick-links {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .footer .right-section .quick-links a {
+            color: #00D4A0;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        .footer .right-section .social-icons a {
+            color: white;
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+        .footer .right-section .legal {
+            color: #A0A0A0;
+            font-size: 0.8rem;
+        }
+  </style>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+   <div class="container">
+    <a class="navbar-brand" href="#">
+     <img alt="Multihexa Logo" height="50" src="logo.png" width="150"/>
+    </a>
+    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+     <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        Home
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        About
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        Programs
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        News
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        Study in Vancouver
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        Business
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        Contact
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        Information Request
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <section class="header-section">
+   <div class="container">
+    <h1>
+     AEC LEA.1A
+     <br/>
+     Web and mobile application programming
+    </h1>
+    <div class="info-box">
+     <i class="fas fa-calendar-alt">
+     </i>
+     <span>
+      15 months
+      <br/>
+      12 months of training and 3 months of internship
+     </span>
+    </div>
+    <div class="info-box">
+     <i class="fas fa-map-marker-alt">
+     </i>
+     <span>
+      In class or online
+     </span>
+    </div>
+    <div class="info-box">
+     <i class="fas fa-graduation-cap">
+     </i>
+     <span>
+      Secondary 5 or equivalent
+     </span>
+    </div>
+    <div class="info-box">
+     <i class="fas fa-dollar-sign">
+     </i>
+     <span>
+      Financial aid for studies
+     </span>
+    </div>
+    <div class="student-info">
+     <img alt="Student holding books" height="50" src="https://storage.googleapis.com/a1aa/image/E8N70W7imBaIP1ve7o4KMdiaCrQFW1Hvj518iAGdSuu7zXxJA.jpg" width="50"/>
+     <span>
+      Sam
+      <br/>
+      Student in Mobile Application Programming
+     </span>
+    </div>
+   </div>
+  </section>
+  <section class="program-description">
+   <div class="container">
+    <h2>
+     Program Description
+    </h2>
+    <p>
+     If you are looking for quality training in a field where demand continues to grow, this program is for you!
+    </p>
+    <p>
+     The web and mobile application programmer is above all an expert in computer languages. At the end of your training, you will have the skills to perform the following tasks:
+    </p>
+    <ul>
+     <li>
+      <i class="fas fa-check">
+      </i>
+      Identify, collect and analyze information on user information processing needs.
+     </li>
+     <li>
+      <i class="fas fa-check">
+      </i>
+      Write operational and efficient programs in a structured manner using various programming languages.
+     </li>
+     <li>
+      <i class="fas fa-check">
+      </i>
+      Create and administer a business site on the web.
+     </li>
+     <li>
+      <i class="fas fa-check">
+      </i>
+      Publish content and deploy it on websites and implement security.
+     </li>
+     <li>
+      <i class="fas fa-check">
+      </i>
+      Use various data structures wisely.
+     </li>
+     <li>
+      <i class="fas fa-check">
+      </i>
+      Program applications in environments using database management systems.
+     </li>
+     <li>
+      <i class="fas fa-check">
+      </i>
+      Practice the techniques required to participate in all stages of systems development.
+     </li>
+     <li>
+      <i class="fas fa-check">
+      </i>
+      Communicate effectively with the various people who must intervene during the different stages of computer systems development.
+     </li>
+    </ul>
+   </div>
+  </section>
+
+
+  <div class="header">
+    <h1>
+     Career opportunities
+    </h1>
+    <p>
+     The world of information technology (IT) offers several opportunities for new graduates. Here are some jobs you could do:
+    </p>
+   </div>
+   <div class="career-opportunities">
+    <div class="career-opportunity">
+     <img alt="Icon representing a web developer" height="50" src="https://storage.googleapis.com/a1aa/image/tmeFNMS4eCidVEPWePB8B3QipIQeuGxnrhXJiUOCt0q77eVcC.jpg" width="50"/>
+     <h3>
+      Web developer
+     </h3>
+     <p>
+      You will take care of the technical implementation and IT development of web applications. You will program the features that meet the client's needs for their web application and much more!
+     </p>
+    </div>
+    <div class="career-opportunity">
+     <img alt="Icon representing a database manager" height="50" src="https://storage.googleapis.com/a1aa/image/QeXi3ZeCvHmsOEBuHe09Hc6WVEddtGPD2Hs7twn1DLb2dfKOB.jpg" width="50"/>
+     <h3>
+      Database manager
+     </h3>
+     <p>
+      You will become the reference for automating the organization, saving it and optimizing the use of data of the organization in which you will work.
+     </p>
+    </div>
+    <div class="career-opportunity">
+     <img alt="Icon representing a mobile developer" height="50" src="https://storage.googleapis.com/a1aa/image/sokeFcZFeytUBUBXcQEPvShvoJPMdbmo0WuANkDkPHa9uviTA.jpg" width="50"/>
+     <h3>
+      Mobile developer
+     </h3>
+     <p>
+      You will be able to create applications adapted to today's multiple devices and needs. It can be the mobile version of a website or a real application for smartphone and/or tablet.
+     </p>
+    </div>
+   </div>
+   <div class="lesson-plan">
+    <h2>
+     Lesson Plan
+    </h2>
+    <div class="sessions">
+     <div class="session">
+      SESSION 1
+      <br/>
+      300 hours
+     </div>
+     <div class="session">
+      SESSION 2
+      <br/>
+      300 hours
+     </div>
+     <div class="session">
+      SESSION 3
+      <br/>
+      300 hours
+     </div>
+     <div class="session">
+      SESSION 4
+      <br/>
+      300 hours
+     </div>
+     <div class="session">
+      INTERNSHIP
+      <br/>
+      375 hours
+     </div>
+    </div>
+    <div class="accordion" id="lessonPlanAccordion">
+     <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+       <button aria-controls="collapseOne" aria-expanded="true" class="accordion-button" data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button">
+        INTRODUCTION TO THE PROFESSION AND COMPUTER COMPONENTS
+       </button>
+      </h2>
+      <div aria-labelledby="headingOne" class="accordion-collapse collapse show" data-bs-parent="#lessonPlanAccordion" id="collapseOne">
+       <div class="accordion-body">
+        Training on the skills to acquire to work in the world of IT and the internal workings of a computer: how to build it, dismantle it, modify it and maintain it.
+       </div>
+      </div>
+     </div>
+     <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+       <button aria-controls="collapseTwo" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">
+        CLIENT OPERATING SYSTEMS
+       </button>
+      </h2>
+      <div aria-labelledby="headingTwo" class="accordion-collapse collapse" data-bs-parent="#lessonPlanAccordion" id="collapseTwo">
+       <div class="accordion-body">
+        <!-- Content for CLIENT OPERATING SYSTEMS -->
+       </div>
+      </div>
+     </div>
+     <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+       <button aria-controls="collapseThree" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">
+        INTRODUCTION TO NETWORKS
+       </button>
+      </h2>
+      <div aria-labelledby="headingThree" class="accordion-collapse collapse" data-bs-parent="#lessonPlanAccordion" id="collapseThree">
+       <div class="accordion-body">
+        <!-- Content for INTRODUCTION TO NETWORKS -->
+       </div>
+      </div>
+     </div>
+     <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+       <button aria-controls="collapseFour" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseFour" data-bs-toggle="collapse" type="button">
+        ALGORITHMY AND PROGRAMMING
+       </button>
+      </h2>
+      <div aria-labelledby="headingFour" class="accordion-collapse collapse" data-bs-parent="#lessonPlanAccordion" id="collapseFour">
+       <div class="accordion-body">
+        <!-- Content for ALGORITHMY AND PROGRAMMING -->
+       </div>
+      </div>
+     </div>
+     <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+       <button aria-controls="collapseFive" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseFive" data-bs-toggle="collapse" type="button">
+        MATHEMATICS APPLIED TO COMPUTER SCIENCE
+       </button>
+      </h2>
+      <div aria-labelledby="headingFive" class="accordion-collapse collapse" data-bs-parent="#lessonPlanAccordion" id="collapseFive">
+       <div class="accordion-body">
+        <!-- Content for MATHEMATICS APPLIED TO COMPUTER SCIENCE -->
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+
+<div style=" background-color: #0A1A3A;
+color: white;
+font-family: 'Arial', sans-serif;">
+   <div class="main-content">
+    <img alt="Portrait of a woman with dark hair, wearing a beige blazer and white shirt, smiling at the camera" height="300" src="https://storage.googleapis.com/a1aa/image/p675ERbnoiY2JxyWZP3hof9YjmVnzOkAmdmvrNdxpp3R8XxJA.jpg" width="400"/>
+    <div class="text-content">
+     <h1>
+      Financial
+      <span>
+       aid
+      </span>
+     </h1>
+     <p>
+      At Multihexa, various financial assistance programs are available. The objective is to allow everyone to have access to quality training. Various financial assistance programs and tax credits are offered.
+     </p>
+     <p>
+      Certain criteria must be met to access financial assistance programs. To check if you are eligible or to receive support in your process, contact us. We will be happy to help you.
+     </p>
+     <button class="btn">
+      INFORMATION REQUEST
+     </button>
+    </div>
+   </div>
+   <div class="footer">
+    <div class="left-section">
+     <img alt="Multihexa logo" height="100" src="logo.png" width="100"/>
+     <div class="newsletter">
+      <p>
+       FOLLOW MULTIHEXA NEWS!
+      </p>
+      <input placeholder="E-mail" type="email"/>
+      <button class="btn">
+       SEND
+      </button>
+     </div>
+    </div>
+    <div class="right-section">
+     <div class="quick-links">
+      <a href="#">
+       ABOUT
+      </a>
+      <a href="#">
+       PROGRAMS
+      </a>
+      <a href="#">
+       NEWS
+      </a>
+      <a href="#">
+       STUDY IN VANCOUVER
+      </a>
+      <a href="#">
+       BUSINESS
+      </a>
+      <a href="#">
+       CONTACT
+      </a>
+     </div>
+     <div class="social-icons">
+      <a href="#">
+       <i class="fab fa-facebook-f">
+       </i>
+      </a>
+      <a href="#">
+       <i class="fab fa-linkedin-in">
+       </i>
+      </a>
+      <a href="#">
+       <i class="fab fa-youtube">
+       </i>
+      </a>
+      <a href="#">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+      <a href="#">
+       <i class="fab fa-tiktok">
+       </i>
+      </a>
+     </div>
+     <div class="legal">
+      <p>
+       <a href="#" style="color: #A0A0A0;">
+        Privacy Policy
+       </a>
+       |
+       <a href="#" style="color: #A0A0A0;">
+        My Cookie Preferences
+       </a>
+      </p>
+      <p>
+       All rights reserved 2024 © Multihexa
+      </p>
+     </div>
+    </div>
+   </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>  
+</body>
+</html>
